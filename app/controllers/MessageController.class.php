@@ -1,17 +1,18 @@
 <?php
 namespace app\controllers;
+use app\models\Login;
 use framework\core\Config;
+use framework\core\Log;
+use app\models\School;
+session_start();
 use framework\core\Model;
 use app\models\Message;
 class MessageController extends \Controller{
 	public function index($page=1)
 	{
-
 		//读取数据库所有留言
 		$model = new Message();
 		$sum = $model->count('message');
-
-
 		$data = $model->query("select * from message order by addtime desc")->fetchAll(\PDO::FETCH_ASSOC);
 		foreach($data as $key=>$one)
 		{
@@ -19,11 +20,7 @@ class MessageController extends \Controller{
 			$data[$key]['content'] = str_replace(mb_substr($one['content'],25),'……',$one['content']);
 		}
 		$this->render('index',['data'=>$data]);
-
-		
 	}
-
-
 	//获取一条消息内容
 	public function getOne($id)
 	{

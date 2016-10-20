@@ -1,0 +1,185 @@
+@import url(m_reset.css);
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 62.5%;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header .left {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header .left p {
+  line-height: 4rem;
+  font-size: 1.6rem;
+  margin-left: 0.6rem;
+  color: white;
+}
+header .left i {
+  color: white;
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+}
+header .right {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+header .right h1 {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 4rem;
+}
+section {
+  -webkit-box-flex: 1;
+}
+section .sec1 {
+  height: 4.4rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  position: relative;
+  -webkit-box-sizing: border-box;
+}
+section .sec1 input {
+  width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+    text-indent: 1em;
+}
+section .sec1 i {
+  position: absolute;
+  top: 1.5rem;
+  left: 2.5rem;
+  color: #ebebeb;
+}
+section .sec1_2 {
+  height: 4.4rem;
+  padding: 0 1rem;
+  position: relative;
+  -webkit-box-sizing: border-box;
+}
+section .sec1_2 input {
+  width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  border-top: none;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+    text-indent: 1em;
+}
+section .sec1_2 i {
+  position: absolute;
+  top: 1.5rem;
+  left: 2.5rem;
+  color: #ebebeb;
+}
+section .sec1_3 {
+  height: 4.4rem;
+  padding: 0 1rem;
+  position: relative;
+  -webkit-box-sizing: border-box;
+}
+section .sec1_3 .inp {
+  width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  border-top: none;
+  padding-left: 2.8rem;
+   text-indent: 1em;
+  -webkit-box-sizing: border-box;
+}
+section .sec1_3 i {
+  position: absolute;
+  top: 1.5rem;
+  left: 2.5rem;
+  color: #ebebeb;
+}
+section .sec1_3 img {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+}
+section .sec1_3 button {
+  width: 8.6rem;
+  height: 2.8rem;
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  background: #fd5501;
+  position: absolute;
+  top: 0.6rem;
+  right: 1.2rem;
+}
+section .sec2 {
+  height: 4.4rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  -webkit-box-sizing: border-box;
+}
+section .ppp{
+    display: none;
+    margin-top: -1rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: red;
+}
+section .sec2 button {
+  width: 100%;
+  height: 4.4rem;
+  background: #fd5501;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+section .sec2_1 {
+  height: 2.8rem;
+  padding: 0 1rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+}
+section .sec2_1 input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+section .sec2_1 span {
+  color: #fd5501;
+}
+section .sec3 {
+  height: 2.8rem;
+    margin-top: 3rem;
+}
+section .sec3 ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .sec3 ul li {
+  -webkit-box-flex: 1;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+section .sec3 ul li span {
+  color: #fd5501;
+}

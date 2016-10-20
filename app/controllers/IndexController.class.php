@@ -1,19 +1,35 @@
 <?php
 namespace app\controllers;
+use app\models\Login;
+use app\models\Users;
+use app\models\Goods;
+use app\models\Usermodel;
 use framework\core\Config;
 use framework\core\Log;
-use app\models\School;
+session_start();
 class IndexController extends \Controller{
-	public function index()
-	{
-		//Log::log('查询了前十所学校');
+    //查找所有商品
+    public function index(){
+        //实例化模型
+        $model = new Usermodel();
+        $data = $model->lists();
+        foreach ($data as $k => $v) {
+            $data[$k]['goods_pic'] = explode(',', $v['goods_pic']);
+        }
+        //print_r($data);die;
+        $this->render('index',['data'=>$data]);
+    }
+    //查询单个商品
+    public function alone(){
+        $goods_id = $_GET['goods_id'];
+        $model = new Usermodel();
+        $data = $model->alone($goods_id);
+        foreach ($data as $k => $v) {
+            $data[$k]['goods_pic'] = explode(',', $v['goods_pic']);
+        }
+        // print_r($data);die;
+        $this->render('alone',['data'=>$data]);
+    }
 
-		//$model = new School();
-		//$result = $model->getOne(['id'=>1]);
-		echo "<body style='background:#2f373a;font-family:Arial,Helvetica,sans-serif;font-size:80px;line-height:10em;text-align:center;color:#4e4e4e;min-width:920px;border-top:10px solid #0c0e0e;'>Hello,world。</body>";
-		
-		
-		//$this->render('index/index',['name'=>$result]);
-	}
 }
 ?>
